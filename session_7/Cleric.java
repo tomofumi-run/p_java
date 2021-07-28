@@ -13,11 +13,11 @@ public class Cleric {
     System.out.println(this.name + "のセルフエイド。\nMPを5消費してHPを" + this.MAX_HP + "まで回復した。");
   }
   public int pray(int sec){
-    int recover = new Random().nextInt(3) + sec;
-    int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
+    int recover = new Random().nextInt(3) + sec; // 例) 0~2の乱数とsecを足す
+    int recoverActual = Math.min(this.MAX_MP - this.mp, recover); // Math.min二つの引数で小さい値を返す
 
     this.mp += recoverActual;
-    System.out.println("MPが" + recoverActual + "回復した。");
+    System.out.println("MPが" + recoverActual + "回復した。" + this.mp );
     return recoverActual;
 
   }

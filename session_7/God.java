@@ -19,7 +19,7 @@ public class God {
     h.slip();
     c.selfAid();
     m1.run();
-    c.pray(5);
+    c.pray(2);
     m2.run();
     h.run();
   }
