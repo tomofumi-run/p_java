@@ -1,12 +1,8 @@
 import java.util.*;
+static final int MAX_HP = 50; // 最大数は変化しないのでフィール外で定義している。
+static final int MAX_MP = 10;
 
 public class Cleric {
-  String name;
-  int hp = 50;
-  final int MAX_HP = 50;
-  int mp = 10;
-  final int MAX_MP = 10;
-
   public void selfAid(){
     this.mp -= 5;
     this.hp = this.MAX_HP;
@@ -19,6 +15,16 @@ public class Cleric {
     this.mp += recoverActual;
     System.out.println("MPが" + recoverActual + "回復した。" + this.mp );
     return recoverActual;
-
+  }
+  public Cleric(String name, int hp, int mp){
+    this.name = name;
+    this.hp = hp;
+    this.mp = mp;
+  }
+  public Cleric(String name, int hp){
+    this(name, hp, Cleric.MAX_HP);
+  }
+  Cleric(String name){
+    this(name, Cleric.MAX_HP);
   }
 }

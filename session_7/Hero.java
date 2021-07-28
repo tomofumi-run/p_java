@@ -1,6 +1,13 @@
 public class Hero {
   String name;
   int hp;
+  Sword sword;
+  static int money = 1000; // Hero.moneyで呼び出し可能
+
+  void attack(){
+    System.out.println(this.name + "は攻撃をした！");
+    System.out.println("敵に5のダメージを与えた");
+  }
 
   void sleep(){
     this.hp = 100;
@@ -20,5 +27,9 @@ public class Hero {
     System.out.println(this.name + "は、逃げ出した！");
     System.out.println("Game Over...");
     System.out.println("最終HPは" + this.hp + "でした。");
+  }
+  Hero(String name){ // 引数指定
+    this.hp = 100; // デフォルト値を設定
+    this.name = name;
   }
 }
