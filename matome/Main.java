@@ -1,16 +1,23 @@
 public class Main {
   public static void main(String[] args){
-    boolean waitTime = true;
-    int time = 60;
-    if(waitTime == true){
-      System.out.println("このアトラクションは待ち時間があります。");
-      if(time > 30){
-        System.out.println("30分以上待ちです。");
-      } else {
-        System.out.println("比較的スムーズにご利用できます。");
-      }
-    } else {
-      System.out.println("このアトラクションは待ち時間なしでご利用できます。");
+    System.out.println("好きなポケモンを選びなさい。");
+    int pokemon = 6;
+
+    switch (pokemon) {
+      case 1:
+        System.out.println("ピカチュウに決めた！");
+        break;
+      case 2:
+        System.out.println("ヒトカゲに決めた！");
+        break;
+      case 3:
+        System.out.println("ゼニガメに決めた！");
+        break;
+      case 4:
+        System.out.println("フシギダネに決めた！");
+        break;
+      default:
+        System.out.println("オーキドに決めた！");
     }
   }
 }
