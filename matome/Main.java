@@ -1,10 +1,10 @@
 public class Main {
   public static void main(String[] args){
-    System.out.println("0から20まで2の倍数のみ答えます。");
-    for(int i = 0; i < 21; i++){
-      if(i % 2 == 0){
-        System.out.println(i);
-      }
+    String[] pokes = {"ピカチュウ", "ヒトカゲ", "ゼニガメ", "フシギダネ"};
+    System.out.println("さぁ、どのポケモンにするんじゃ？");
+    for(String poke: pokes){
+      System.out.println(poke);
     }
+    System.out.println(pokes[0] + "、君に決めた！");
   }
 }
