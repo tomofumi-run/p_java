@@ -1,12 +1,16 @@
 public class Main {
   public static void main(String[] args){
-    String[] pokes = {"ピカチュウ", "ヒトカゲ", "ゼニガメ", "フシギダネ"};
-    System.out.println("オーキド博士からもらえるポケモンの名前を一体答えなさい。");
-    String input = new java.util.Scanner(System.in).nextLine();
-    for(String poke: pokes){
-      if(input.equals(poke)){
-        System.out.println("あなたの答え:" + input + " 正解じゃ♪");
-      }
-    }
+    int a = 4;
+    int b = 2;
+    int c = 6;
+    int d = 3;
+    System.out.println(a + b);
+    System.out.println(a - b);
+    System.out.println(a / b);
+    System.out.println(a * b);
+    System.out.println(c + d);
+    System.out.println(c - d);
+    System.out.println(c / d);
+    System.out.println(c * d);
   }
 }
