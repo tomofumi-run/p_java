@@ -1,3 +1,4 @@
+package matome.calc;
 public class Calc{
   public static int tasukake(int a, int b){
     int tasu = a + b;
