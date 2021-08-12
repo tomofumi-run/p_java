@@ -6,6 +6,6 @@ public class Main{
     hoge.kick = 40;
     hoge.call();
     hoge.haste();
-    hoge.toChallenge(100);
+    hoge.toChallenge(100);;
   }
 }
