@@ -13,7 +13,4 @@ public class Human {
   public void setAge(int age){
     this.age = age;
   }
-  public void call(){
-    System.out.println("現在の年齢は、" + this.age + "です。");
-  }
 }
