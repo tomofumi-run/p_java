@@ -4,11 +4,13 @@ public class Main{
     Engineer e = new Engineer("ほげSE", 150000);
     Unemployed u = new Unemployed("ほげニート", 0);
     t.call();
-    e.call();
-    u.call();
-
     t.teach();
+
+    e.call();
     e.assemble();
+    
+    u.call();
     u.troublesome();
+
   }
 }
