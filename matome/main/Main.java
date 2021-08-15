@@ -1,13 +1,14 @@
 public class Main{
   public static void main(String[] args){
-    Human h = new Human();
-    System.out.println(h.getName());
-    System.out.println(h.getAge());
+    Teacher t = new Teacher("ほげ先生", 200000);
+    Engineer e = new Engineer("ほげSE", 150000);
+    Unemployed u = new Unemployed("ほげニート", 0);
+    t.call();
+    e.call();
+    u.call();
 
-    h.setName("成人");
-    h.setAge(20);
-
-    System.out.println(h.getName());
-    System.out.println(h.getAge());
+    t.teach();
+    e.assemble();
+    u.troublesome();
   }
 }
