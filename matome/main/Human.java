@@ -1,16 +1,16 @@
 public class Human {
-  private String name = "赤ちゃん";
-  private int age = 0;
+  private String name;
+  private int money;
   public String getName(){
     return this.name;
   }
   public void setName(String name){
     this.name = name;
   }
-  public int getAge(){
-    return this.age;
+  public int getMoney(){
+    return this.money;
   }
-  public void setAge(int age){
-    this.age = age;
+  public void setMoney(int money){
+    this.money = money;
   }
 }
