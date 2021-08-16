@@ -1,4 +1,4 @@
-public class Human {
+public abstract class Human {
   private String name;
   private int money;
 
