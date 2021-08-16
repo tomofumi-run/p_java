@@ -15,7 +15,5 @@ public abstract class Human {
     this.money = money;
   }
 
-  public void call(){
-    System.out.println("私の名前は、" + getName() + "\n給料は、"+ getMoney() + "なり。");
-  }
+  public abstract void call();
 }

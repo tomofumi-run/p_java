@@ -7,4 +7,8 @@ public class Engineer extends Human{
   public void assemble(){
     System.out.println("コードを書きます。");
   }
+
+  public void call(){
+    System.out.println("エンジニアです");
+  }
 }
