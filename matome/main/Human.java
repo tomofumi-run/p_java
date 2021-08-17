@@ -1,4 +1,4 @@
-public abstract class Human {
+public abstract class Human implements Animal {
   private String name;
   private int money;
 
@@ -16,4 +16,14 @@ public abstract class Human {
   }
 
   public abstract void call();
+
+  public void run(){
+    System.out.println("走ると疲れるな。");
+  }
+  public void eat(){
+    System.out.println("ラーメンうま。");
+  }
+  public void sleep(){
+    System.out.println("体動かして、飯食うと、眠くなるで。");
+  }
 }

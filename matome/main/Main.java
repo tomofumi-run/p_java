@@ -3,5 +3,6 @@ public class Main{
     Engineer e = new Engineer("ほげSE", 150000);
     e.assemble();
     e.call();
+    e.run();
   }
 }
